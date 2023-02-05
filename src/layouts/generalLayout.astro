@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/navbar';
+import SideBar from '../components/SideBar';
 
 export interface Props {
 	title: string;
@@ -15,8 +15,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="flex">
-		<h1>{title}</h1>
-		<Navbar/>
+		<SideBar />
 		<slot />
 	</body>
 </html>
